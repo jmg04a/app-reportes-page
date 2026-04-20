@@ -8,8 +8,9 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f4;
+            /* Flexbox para centrar vertical y horizontalmente */
             display: flex;
-            justify_content: center;
+            justify-content: center; /* Corregido: guion medio en lugar de guion bajo */
             align-items: center;
             height: 100vh;
             margin: 0;
@@ -22,6 +23,8 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             max-width: 400px;
             width: 90%;
+            /* box-sizing asegura que el padding no desborde el width en móviles */
+            box-sizing: border-box; 
         }
         .icon {
             color: #28a745; /* Verde éxito */
@@ -63,8 +66,7 @@
         
         <p>Tu cuenta institucional ha sido confirmada correctamente.</p>
         <p>Ya puedes cerrar esta ventana y regresar a la aplicación <strong>Reportes ITL</strong> para iniciar sesión.</p>
-
-        </div>
+    </div>
 
 </body>
 </html>
